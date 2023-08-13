@@ -1,6 +1,8 @@
 # Epsilla Ruby SDK
 
 Welcome to Ruby SDK for Epsilla Vector Database!
+https://rubygems.org/gems/epsilla-ruby
+
 
 ## Installation
 ```shell
