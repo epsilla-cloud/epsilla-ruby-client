@@ -70,12 +70,12 @@ puts status_code, response
 
 
 # Drop table
-status_code, response = client.database.drop_table("MyTable")
-puts status_code, response
+#status_code, response = client.database.drop_table("MyTable")
+#puts status_code, response
 
 # Unload db
-status_code, response = client.database.unload_db("MyDB")
-puts status_code, response
+#status_code, response = client.database.unload_db("MyDB")
+#puts status_code, response
 
 ```
 
