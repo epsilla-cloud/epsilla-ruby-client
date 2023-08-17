@@ -80,4 +80,6 @@ puts status_code, response
 ```
 
 ## Contributing
-Bug reports and pull requests are welcome on GitHub at https://github.com/epsilla-cloud/epsilla-ruby.
+Bug reports and pull requests are welcome on GitHub at https://github.com/epsilla-cloud/epsilla-ruby-client
+
+If you have any question or problem, please join our discord https://discord.com/invite/cDaY2CxZc5
