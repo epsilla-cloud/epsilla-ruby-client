@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name = "epsilla-ruby"
   spec.version = Epsilla::VERSION
   spec.authors = ["Epsilla Team"]
-  spec.email   = ["eric@epsilla.com", "admin@epsilla.com"]
+  spec.email   = ["eric@epsilla.com"]
 
   spec.summary = "Ruby client for Epsilla Vector Database"
   spec.description = "EpsillaDB is a scalable, high-performance, and cost-effective vector database"
