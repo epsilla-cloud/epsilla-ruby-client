@@ -3,7 +3,7 @@
 require_relative "lib/epsilla/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "epsilla"
+  spec.name = "epsilla-ruby"
   spec.version = Epsilla::VERSION
   spec.authors = ["Epsilla Team"]
   spec.email   = ["eric@epsilla.com"]
