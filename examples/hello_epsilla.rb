@@ -8,6 +8,7 @@
 
 require "epsilla"
 
+
 # Connect to Epsilla VectorDB
 client = Epsilla::Client.new(protocol="http", host="127.0.0.1", port="8888")
 # puts client.live?
@@ -45,11 +46,11 @@ puts status_code, response
 status_code, response = client.database.rebuild()
 puts status_code, response
 
-# Query Vectors
+# Query vectors
 query_field = "Embedding"
-response_fields = ["Doc"]
 query_vector=[0.35, 0.55, 0.47, 0.94]
-limit=1
+response_fields = ["Doc"]
+limit=2
 status_code, response = client.database.query(table_name="MyTable", query_field=query_field, query_vector=query_vector, response_fields=response_fields, limit=limit, with_distance=true)
 puts status_code, response
 
