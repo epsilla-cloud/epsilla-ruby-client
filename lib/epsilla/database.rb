@@ -45,6 +45,19 @@ module Epsilla
       return response.status, response.body
     end
 
+    # get a list of table names in current DB
+    def list_tables()
+      unless @db_name
+        raise Exception("[ERROR] Please use_db() first!")
+      end
+      
+      response = client.connection.post do |req|
+        req.url "/api/#{@db_name}/schema/tables/show"
+      end
+      
+      return response.status, response.body      
+    end
+
     # insert data into table
     def insert(table_name = "MyTable", table_records = nil)
       unless @db_name
