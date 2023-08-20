@@ -30,6 +30,10 @@ table_fields= [
 status_code, response = client.database.create_table(table_name="MyTable", table_fields=table_fields)
 puts status_code, response
 
+# List tables
+status_code, response = client.database.list_tables()
+puts status_code, response
+
 # Insert new vector records into table
 table_records = [
   {"ID" => 1, "Doc" => "Berlin", "Embedding" => [0.05, 0.61, 0.76, 0.74]},
